@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #434;
+  line-height: 2;
+  background: #f9f9f9;
+}
+code {
+  padding: 0.6rem;
+  display: block;
+  margin: 0.5rem 2rem;
+
+  background: #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+  color: #434;
+}
+nav li {
+  list-style: none;
+}
+
+/* ______________________________ */
+
+.header {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: solid 1.5px #434;
+  text-transform: capitalize;
+}
+
+.nav-links {
+  height: 8.4rem;
+  overflow: scroll;
+  border-bottom: 3px solid #434;
+}
+
+.nav-links > li {
+  padding: 0.6rem 2rem;
+  border-bottom: solid 1px #434;
+  text-transform: capitalize;
+}
+main {
+  padding: 1.3rem 2rem;
+}
+h1 {
+  text-transform: capitalize;
+  margin-left: -0.8rem;
+}
+
+p {
+  margin-bottom: 0.8rem;
+}
+
+.inside-list li {
+  list-style: number;
+  margin-left: 4rem;
+  margin-bottom: 0.8rem;
+}
+
+@media screen and (min-width: 816px) {
+  #navbar {
+    border-right: solid 1px #434;
+    height: 100vh;
+    border-bottom: none;
+    width: 17rem;
+    float: left;
+  }
+  .nav-links {
+    height: auto;
+    border-bottom: none;
+  }
+
+  .header {
+    text-align: left;
+    padding: 1.2rem 1.6rem;
+    /* padding-left: 1.6rem; */
+    border-bottom: solid 1px #434;
+    text-transform: capitalize;
+  }
+  main {
+    width: calc(100vw - 17rem);
+    float: left;
+    height: 100vh;
+    overflow: scroll;
+    padding: 2rem 2.8rem;
+  }
+  h1 {
+    margin-left: -1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  section {
+    padding-bottom: 0.5rem;
+  }
+}
